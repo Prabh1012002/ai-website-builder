@@ -1,130 +1,99 @@
 export default function Home() {
   return (
-    <main
-      style={{
-        fontFamily: "serif",
-        padding: "60px 40px",
-        maxWidth: "1200px",
-        margin: "0 auto",
-      }}
-    >
-      {/* HERO SECTION */}
-      <section style={{ textAlign: "center", marginBottom: "80px" }}>
-        <h1
-          style={{
-            fontSize: "64px",
-            letterSpacing: "0.08em",
-            marginBottom: "20px",
-            borderBottom: "1px solid black",
-            display: "inline-block",
-            paddingBottom: "10px",
-          }}
-        >
-          CUTLER & GROSS
-        </h1>
+    <main className="bg-white text-black font-serif">
 
-        <p
-          style={{
-            fontSize: "22px",
-            maxWidth: "700px",
-            margin: "20px auto",
-            opacity: 0.7,
-            lineHeight: "1.6",
-          }}
-        >
-          Handcrafted luxury eyewear since 1969.  
-          Designed in London. Worn worldwide.
-        </p>
+      {/* HERO — EDITORIAL FULLSCREEN */}
+      <section className="relative w-full h-[90vh] overflow-hidden">
+        <img
+          src="/home-hero.jpg"
+          alt="Eyewear model"
+          className="w-full h-full object-cover"
+        />
 
-        <a
-          href="/shop"
-          style={{
-            marginTop: "30px",
-            display: "inline-block",
-            fontSize: "18px",
-            paddingBottom: "6px",
-            borderBottom: "1px solid black",
-            textDecoration: "none",
-          }}
-        >
-          Explore the Collection →
-        </a>
+        <div className="absolute bottom-16 left-10 max-w-xl text-white">
+          <h1 className="text-6xl tracking-wide mb-4">
+            The Art of Eyewear
+          </h1>
+          <p className="text-lg opacity-90">
+            Precision. Craftsmanship. Modern British Luxury.
+          </p>
+        </div>
       </section>
 
-      {/* FEATURED COLLECTION */}
-      <section>
-        <h2
-          style={{
-            fontSize: "40px",
-            marginBottom: "40px",
-            borderBottom: "1px solid black",
-            paddingBottom: "10px",
-            display: "inline-block",
-          }}
-        >
-          Featured Eyewear
-        </h2>
 
-        <div
-          style={{
-            display: "grid",
-            gap: "50px",
-            gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-          }}
-        >
-          {/* PRODUCT 1 */}
+      {/* EDITORIAL SPLIT SECTION */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-0 my-24">
+        <div className="p-16">
+          <h2 className="text-5xl mb-6 leading-tight">
+            Handcrafted Frames<br />Built for Modern Life
+          </h2>
+          <p className="text-lg opacity-80 leading-relaxed">
+            Our titanium and acetate frames are engineered with meticulous
+            attention to detail. Inspired by timeless British design, each
+            piece blends heritage craftsmanship with contemporary aesthetics.
+          </p>
+        </div>
+
+        <div className="h-[500px] bg-gray-200"></div>
+      </section>
+
+
+      {/* FEATURED COLLECTION — EDITORIAL GRID */}
+      <section className="px-10 py-24">
+        <h3 className="text-4xl mb-12 tracking-wide">Featured Collection</h3>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
           <div>
-            <div
-              style={{
-                height: "200px",
-                background: "#ddd",
-                borderRadius: "4px",
-              }}
-            />
-            <h3 style={{ marginTop: "15px", fontSize: "22px" }}>Classic 0822</h3>
-            <p style={{ opacity: 0.7 }}>Bold acetate frame</p>
+            <div className="h-72 bg-gray-200"></div>
+            <h4 className="text-2xl mt-4">Titanium Round</h4>
+            <p className="opacity-70">Minimalist precision</p>
           </div>
 
-          {/* PRODUCT 2 */}
           <div>
-            <div
-              style={{
-                height: "200px",
-                background: "#ddd",
-                borderRadius: "4px",
-              }}
-            />
-            <h3 style={{ marginTop: "15px", fontSize: "22px" }}>Retro 1394</h3>
-            <p style={{ opacity: 0.7 }}>Vintage round silhouette</p>
+            <div className="h-72 bg-gray-200"></div>
+            <h4 className="text-2xl mt-4">Titanium Square</h4>
+            <p className="opacity-70">Architectural elegance</p>
           </div>
 
-          {/* PRODUCT 3 */}
           <div>
-            <div
-              style={{
-                height: "200px",
-                background: "#ddd",
-                borderRadius: "4px",
-              }}
-            />
-            <h3 style={{ marginTop: "15px", fontSize: "22px" }}>Sunglass 9001</h3>
-            <p style={{ opacity: 0.7 }}>Premium UV protection</p>
+            <div className="h-72 bg-gray-200"></div>
+            <h4 className="text-2xl mt-4">Titanium Aviator</h4>
+            <p className="opacity-70">Classic modern</p>
           </div>
         </div>
       </section>
 
+
+      {/* EDITORIAL BANNER */}
+      <section className="relative w-full h-[60vh] my-24">
+        <div className="absolute inset-0 bg-gray-200"></div>
+
+        <div className="absolute bottom-10 left-10 text-black">
+          <h3 className="text-5xl mb-4">Designed in London</h3>
+          <p className="text-lg opacity-80 max-w-md">
+            A legacy of craftsmanship, reimagined for today.
+          </p>
+        </div>
+      </section>
+
+
+      {/* ABOUT — MINIMAL EDITORIAL BLOCK */}
+      <section className="px-10 py-24 bg-[#f8f8f8]">
+        <h3 className="text-4xl mb-6">Our Philosophy</h3>
+        <p className="text-lg opacity-80 max-w-3xl leading-relaxed">
+          We believe eyewear is more than an accessory — it’s a statement of
+          identity. Our frames are crafted using premium materials and
+          traditional techniques, ensuring every piece feels timeless,
+          intentional, and uniquely yours.
+        </p>
+      </section>
+
+
       {/* FOOTER */}
-      <footer
-        style={{
-          marginTop: "100px",
-          borderTop: "1px solid black",
-          paddingTop: "20px",
-          opacity: 0.7,
-          fontSize: "16px",
-        }}
-      >
-        © 2026 Cutler & Gross — British Luxury Eyewear
+      <footer className="border-t border-black px-10 py-10 text-sm opacity-70">
+        © 2026 Luxury Eyewear — Editorial Collection
       </footer>
+
     </main>
   );
 }
