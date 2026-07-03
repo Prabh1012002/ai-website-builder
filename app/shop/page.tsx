@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="bg-white text-black font-serif">
 
-      {/* HERO — EDITORIAL FULLSCREEN */}
+      {/* HERO */}
       <section className="relative w-full h-[90vh] overflow-hidden">
         <img
           src="/home-hero.jpg"
@@ -20,8 +20,7 @@ export default function Home() {
         </div>
       </section>
 
-
-      {/* EDITORIAL SPLIT SECTION */}
+      {/* EDITORIAL SPLIT */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-0 my-24">
         <div className="p-16">
           <h2 className="text-5xl mb-6 leading-tight">
@@ -29,16 +28,14 @@ export default function Home() {
           </h2>
           <p className="text-lg opacity-80 leading-relaxed">
             Our titanium and acetate frames are engineered with meticulous
-            attention to detail. Inspired by timeless British design, each
-            piece blends heritage craftsmanship with contemporary aesthetics.
+            attention to detail. Inspired by timeless British design.
           </p>
         </div>
 
         <div className="h-[500px] bg-gray-200"></div>
       </section>
 
-
-      {/* FEATURED COLLECTION — EDITORIAL GRID */}
+      {/* COLLECTION GRID */}
       <section className="px-10 py-24">
         <h3 className="text-4xl mb-12 tracking-wide">Featured Collection</h3>
 
@@ -63,7 +60,6 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* EDITORIAL BANNER */}
       <section className="relative w-full h-[60vh] my-24">
         <div className="absolute inset-0 bg-gray-200"></div>
@@ -76,18 +72,13 @@ export default function Home() {
         </div>
       </section>
 
-
-      {/* ABOUT — MINIMAL EDITORIAL BLOCK */}
+      {/* ABOUT */}
       <section className="px-10 py-24 bg-[#f8f8f8]">
         <h3 className="text-4xl mb-6">Our Philosophy</h3>
         <p className="text-lg opacity-80 max-w-3xl leading-relaxed">
-          We believe eyewear is more than an accessory — it’s a statement of
-          identity. Our frames are crafted using premium materials and
-          traditional techniques, ensuring every piece feels timeless,
-          intentional, and uniquely yours.
+          Eyewear is more than an accessory — it’s a statement of identity.
         </p>
       </section>
-
 
       {/* FOOTER */}
       <footer className="border-t border-black px-10 py-10 text-sm opacity-70">
